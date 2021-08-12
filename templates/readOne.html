@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Read (All)</title>
+</head>
+<body>
+    <div class="container p-4">
+        <h1>User {{one_user.id}}</h1>
+        <a href="/users">Home</a>
+        <div class="box">
+            <p></p>
+            <p>Full Name: {{one_user.first_name}} {{one_user.last_name}}</p>
+            <p>Email: {{one_user.email}}</p>
+            <p>Created On: {{one_user.created_at}}</p>
+            <p>Last Updated On: {{one_user.updated_at}}</p>
+        </div>
+
+        <a href="/users/{{one_user.id}}/edit">Edit</a>
+        <a href="/delete_user/{{one_user.id}}">Delete</a>
+    </div>
+
+</body>
+</html>
